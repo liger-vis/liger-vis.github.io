@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="stylesheets/styles.css">
     <link rel="stylesheet" href="stylesheets/pygment_trac.css">
-    <link rel="shortcut icon" type="image/png" href="encoding.png">
+    <link rel="shortcut icon" type="image/png" href="liger.jpg">
 <!--     <script src="machine_learning.min.js"></script> -->
 
 
@@ -31,7 +31,7 @@
         <div>
 <!--           <div style="float:left; margin-right:5px; "> <img src="encoding.png" style=" width: 21px;"alt="encoding"></div>
           -->
-          <h2> Investigating Direct Manipulation of Graphical Encodings</h2>
+          <h2> Liger: Combining Interaction Paradigms for Visual Analysis</h2>
         <!--   <h4><font color="#1379DC">Bahador Saket, Samuel Huron, Charles Perin, Alex Endert</font></h4> -->
         </div>
    
@@ -42,14 +42,14 @@
                 Fork on <strong style="line-height: 130%;">GitHub</strong>
               </a>
             </li>
-             <li>
+            <li>
               <a href="https://github.com/encodingstudy/encodingstudy.github.io/tree/master/Sketch%20Analysis">
-                Link to<strong style="line-height: 130%;">Analysis</strong>
+                Link to<strong style="line-height: 130%;">Paper</strong>
               </a>
             </li>
              <li>
-              <a href="https://github.com/encodingstudy/encodingstudy.github.io/tree/master/Study%20Tool">
-                Link to<strong style="line-height: 130%;">Prototype</strong>
+              <a href="https://vis-app.now.sh/">
+                Link to<strong style="line-height: 130%;">Launch</strong>
               </a>
             </li>
 
@@ -59,19 +59,12 @@
         </div>
 
         <!-- <p><em>View the <a href="http://github.github.com/github-flavored-markdown/sample_content.html">source of this content</a>.</em></p> -->
-        <h3>What is this study about?</h3>
+        <h3>What is Liger?</h3>
         <p style="margin-top:-15px">
-        We investigate direct manipulation of graphical encodings as a method for interacting with visualizations. There is an increasing interest in developing visualization tools that enable users to perform operations by directly manipulating graphical encodings rather than external widgets such as checkboxes and sliders. Designers of such tools must decide which direct manipulation operations should be supported, and identify how each operation can be invoked. However, we lack empirical guidelines for how people convey their intended operations using direct manipulation of graphical encodings. We address this issue by conducting a qualitative study that examines how participants perform 15 operations using direct manipulation of standard graphical encodings. From this study, we 1) identify a list of strategies people employ to perform each operation, 2) observe commonalities in strategies across operations, and 3) derive implications to help designers leverage direct manipulation of graphical encoding as a method for user interaction. 
+       Liger is a visual data exploration prototype that couples the MVS and VbD paradigms into a unified tool. We use Liger as a petri dish to investigate opportunities and challenges in combining multiple paradigms. Through the design and implementation of Liger, we exemplify how multiple interaction paradigms can be processed to generate context that can be used to complement the individual paradigms.
         </p>
 
 
-        <h3>The prototype used in our study</h3>
-        <p style="margin-top:-15px">
-          We developed an interactive data visualization using JavaScript. The visualization modules are built using the D3 toolkit. The tool we implemented has an Upload and a Reset button. The Upload button enables the interviewer to upload any of the visualizations created using the datasets used in our study. The Reset button allows the interviewer to reset the visualization after a participant has interacted with the visualization. We added interactivity to the encodings used in visualizations. For instance, users could change the position, color, width, and height of the bars in a bar chart. Or, they could change the size, position, and color of circles in the scatterplot.
-
-
-          The tool shows one visualization at a time. Participants can perform each operation by directly manipulating the encodings in the visualization. For example, the interviewer uploads a bar chart visualization in our tool and asks a participant to perform an operation. The participant can manipulate different operations to convey her intention. The tool only enables participants to manipulate the encodings and does not recompute the visualization (similar to a drawing interface like Adobe Illustrator). Enabling the participants to convey their actions without the system reacting to those actions allowed us to observe participants' unrevised behavior, and drive system design to accommodate it.
-        </p>
         <div style=" align:center; width: 600px ; margin:0 auto;">
 
           <iframe class="youtube-player" type="text/html" 
