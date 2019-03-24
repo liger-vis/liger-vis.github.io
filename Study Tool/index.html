@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>DemoLearner</title>
+		<link href="frontend/css/main.css" rel="stylesheet">
+
+		<!-- D3 -->
+		<script src="https://d3js.org/d3.v4.min.js"></script>
+<!-- 		<script src="https://d3js.org/d3.v4.min.js"></script> -->
+		
+		<!-- FileSaving -->
+		 <script src="https://cdn.rawgit.com/eligrey/canvas-toBlob.js/f1a01896135ab378aa5c0118eadd81da55e698d8/canvas-toBlob.js"></script>
+	     <script src="https://cdn.rawgit.com/eligrey/FileSaver.js/e9d941381475b5df8b7d7691013401e171014e89/FileSaver.min.js"></script>
+	     
+		<!-- JQuery UI -->
+		<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+		<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+		<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+  		<!-- Font Awsome -->
+  	    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+        
+		<!-- Style Sheet -->
+  	    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pretty-checkbox@3.0/dist/pretty-checkbox.min.css">
+
+  		<!--Additional Libs -->
+  		<!-- <script src="frontend/lib/jquery.js"></script>  -->
+		<script src="frontend/lib/jquery.nice-select.js"></script>
+		<link rel="stylesheet" href="frontend/lib/nice-select.css">
+
+	</head>
+	<body>
+		<div class="container">
+				<div class="devMenu" style="display: inline-block; float: right">
+	<!-- 				<div id="dialog" class="dialog" style="display:none; z-index: -1 !important;">
+						<div style="margin:5px 2px 0px 2px; font: 8px sans-serif;">
+							<span style="font-size:12px">Color<span>
+							<input type="color" value="#ff0000" id="colorWell" style="width: 80px; height:20px">
+						</div>
+					</div> -->
+					<div style="float:left; width:34%;">
+						
+					</div>
+					<div style="float:right; width:64%; margin:1%;">
+						<div class=" importButton" style="margin-left:20px">
+							<input id="filebutton" type="file" style="display:none; " onchange="readMultipleFiles(function(){ $('#filebutton').val(null); addInteractivity();});"/>
+							<span onclick="document.getElementById('filebutton').click()" ><i class="fa fa-upload fa-1x" ></i></span>
+						</div>
+						<div class="refButton" style="margin-left: 30px">
+							<span onclick="reloadInitialVis(function(){ addInteractivity();});"><i class="fas fa-sync fa-2x"></i></span>
+						</div>
+					</div>
+
+	
+				
+				</div>
+		
+				<div id="taskCustomPanel">
+				</div>
+				<div id="visContainer">
+		
+				</div>
+		</div>
+	</body>
+
+	<!-- Source code for  (Note: in ECMAScript6 - need to use babel to compile) -->
+	<script src="./frontend/src/main.js" charset="utf8"></script>
+	<script src="./frontend/src/readFile.js" charset="utf8"></script>
+	<script src="./frontend/src/loadTask.js" charset="utf8"></script>
+	<script src="./frontend/src/embeddedInteraction.js" charset="utf8"></script>
+    <script src="./frontend/src/addInteractivity.js" charset="utf8"></script>
+    <script src="./frontend/src/barAddInteraction.js" charset="utf8"></script>
+</html>

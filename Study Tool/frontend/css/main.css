@@ -1,0 +1,331 @@
+/*vis related stuffs*/
+
+.html, body{
+   overflow: hidden;
+   margin:0;
+}
+.container{
+  margin: 0 auto;
+  overflow-x: hidden;
+  overflow-y: hidden;
+    background-color:#FAFAFA; 
+/*  text-align:center;*/
+}
+
+.toolTip {
+  position: absolute;
+  display: none;
+  min-width: 60px;
+  height: auto;
+  font-size: 11px;
+  background: none repeat scroll 0 0 #ffffff;
+  border: 1px solid #6F257F;
+  padding: 2px;
+  text-align: center;
+}
+/* header buttons ans styling*/
+.viewPanel{
+  width: 100%;  
+/*  background-color: #F6F7F9;*/
+  font: 12px sans-serif;
+  color:#445870;
+  height:10%;
+
+
+/*  margin-left:5px;*/
+}
+
+
+
+.featureMenu{
+  width:110px;  
+  font: 12px sans-serif;
+  color:#445870;
+  position:absolute;
+  padding: 15px;
+  margin-top:10px;
+  box-shadow: 0 0 1px rgba(57,70,78,.15), 0 10px 10px -8px rgba(57,70,78,.25); 
+  border-radius: 5px;
+}
+
+#visCutstomTopPanel{ 
+/*  background-color: #F6F7F9;*/
+  border-radius: 15px;
+  font: 8px sans-serif;
+  color:#445870;
+  height:40px;
+  margin-left:5px;
+  padding-top:5px;
+  position:absolute;
+}
+
+.devMenu{
+  width: 100%;
+  font: 12px sans-serif;
+  height:10%;
+}
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;/*
+    padding: 9px 12px;*/
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    margin-left: 6px;
+    margin-top: 8px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.button {
+    background-color: #F6F7F9; 
+    color: black; 
+    width:50px;
+    height:30px;
+    border: 1px solid #CCCBCB;
+}
+
+.button:hover {
+    background-color:#1E95E4;
+    color: white;
+}
+
+
+/*.userView, .developerView{
+  margin-top:8px;
+}*/
+
+#visContainer {
+  width: 98%;
+/*  border: 1px solid #CCCBCB;*/
+/*  margin-left:1%;*/
+  margin-right:1%;
+  float: right;
+  background-color: white;
+}
+
+#taskCustomPanel{
+/*    border: 1px solid #CCCBCB;*/
+  text-align: center;
+  width: 0.1%;
+    background-color: white;
+  float:left;
+/*  margin-left: 1%;*/
+
+}
+
+/*
+Visualization Header Styling
+*/
+
+
+.importButton,.refButton,.stopButton,.playButton, .featureBtnContainer{
+  display: inline-block;
+  float: right;
+/*  margin-top:4px;*/
+/*  margin: 1%;
+*/
+ /* border: 1px solid #9999ff;*/
+}
+
+
+.myIcon{
+   vertical-align: middle;
+   display: block;
+   text-align: center;
+}
+
+.myText {
+   font: 11px sans-serif;
+}
+
+/*
+Top Buttons
+*/
+.fa-upload{
+  font-size: 2em;
+}
+
+.featureBtnSelected{
+  color:#1E95E4
+}
+
+.fa-upload:hover{
+  color:#1E95E4;
+  cursor: pointer;
+}
+
+.fa-sync:hover{
+  color:#1E95E4;
+  cursor: pointer;
+}
+
+
+
+.taskAddition{
+  font: 17px sans-serif;
+  box-shadow: 0 0 1px rgba(57,70,78,.15), 0 10px 10px -8px rgba(57,70,78,.25); 
+  margin: 0 auto; 
+  margin-top: 10px;
+  padding-top: 15px;
+  float:left;
+  height:29%;
+  width: 50%;
+/*  position:absolute;*/
+}
+/*
+Questions
+*/.line {
+  fill: none;
+  stroke: steelblue;
+  stroke-width: 2px;
+}
+
+.questionDescription{
+  margin-top: 50px;
+  margin-left:2px;
+  margin-right:2px;
+  padding:4px;
+  height:150px;
+  font: 14px sans-serif;
+ /* border: 1px solid #F6F7F9;*/
+
+}
+
+.qButton {
+    background-color: #F6F7F9; /* Green */
+    border: none;
+    color: white;
+    padding: 8px 12px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+.button2 {
+    background-color: #F6F7F9; 
+    color: black; 
+    border: 1px solid #E8E8E8;
+}
+
+.button2:hover {
+    background-color: #008CBA;
+    color: white;
+}
+
+
+.nextButton{
+  margin:10px;
+  text-align: center;
+}
+
+
+.item{
+  fill-opacity:0.5;
+}
+
+.itemSelected{
+  stroke:#1592D0;
+  stroke-width:1;
+  fill-opacity:0.5;
+  stroke-opacity:0.9
+  cursor: pointer;
+}
+
+/*
+visualization realted css
+*/
+
+#mainVis{
+  font: 11px sans-serif;
+}
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.point{
+  stroke: #000;
+}
+
+.selected1{
+  stroke-opacity : 2.5;
+  stroke-dasharray: 2;
+  stroke :black;
+  stroke-width:3px;
+}
+
+.link {
+  stroke: #000;
+  stroke-width: 1.5px;
+}
+
+.node {
+  cursor: move;
+  stroke: #000;
+  stroke-width: 1.5px;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: black;
+  shape-rendering: crispEdges;
+}
+
+.axis text {
+    font-family: sans-serif;
+    font-size: 11px;
+}
+
+
+
+
+.ui-widget-content.success-dialog {
+    background: #F9F9F9;
+    border: 1px solid #90d93f;
+    color: #222222;
+    display:none;
+
+  }
+
+.ui-dialog.success-dialog {
+    left: 0;
+    outline: 0 none;
+    padding: 0 !important;
+    position: absolute;
+    top: 0;
+    width:auto !important;
+}
+
+.ui-dialog.success-dialog .ui-dialog-content {
+    background: none repeat scroll 0 0 transparent;
+    border: 0 none;
+    overflow: auto;
+    position: relative;
+    padding: 0 !important;
+    margin: 0;
+    opacity: 0.7 !important;
+}
+
+.ui-dialog.success-dialog .ui-widget-header {
+    background: #F9F9F9;
+    border: 0;
+    color: #fff;
+    font-weight: normal;
+}
+
+.ui-dialog.success-dialog .ui-dialog-titlebar {
+    padding: 0.1em .5em;
+    position: relative;
+    font-size: 1em;
+}
+
